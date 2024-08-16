@@ -1,0 +1,79 @@
+.add{
+    width: 80%;
+    margin-left: max(3vw,25px);
+    margin-top: 100px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    z-index: -10;
+}
+.add form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.uploads-image{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.multiImage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.multiImage span{
+    color: grey;
+    font-size: 13px;
+}
+.M_image,.m-images{
+    width: 150px;
+}
+.M_image img,.multiImage img{
+    width: 100%;
+    cursor: pointer;
+}
+.multiple-Images{
+    display: flex;
+    gap: 20px;
+}
+ 
+.p-details{
+    width: 100%;
+    padding: 5px 15px;
+    outline: none;
+}
+.product-name,.product-category{
+    width: 30%;
+}
+.p-description{
+    width: 70%;
+    padding: 5px 15px;
+    outline: none;
+}
+.v-gap{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.p-price{ 
+    outline: none;
+    padding: 5px 15px;
+}
+.price-grid,.product-name-category,.product-review-rating{
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+}
+.btn{
+    width: 15%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(42, 35, 250);
+    color: #fff;
+    cursor: pointer;
+}
+ 

@@ -1,0 +1,28 @@
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background: #fff;
+}
+.nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+}
+.n-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.n-logo .n-icon {
+    color: gold;
+    font-size: 30px;
+}
+.nav-icons{
+    font-size: 20px;
+    cursor: pointer;
+}
+.navbar hr{
+    border: 1px solid grey;
+}

@@ -1,0 +1,17 @@
+.hpdisplay {
+    width: 100%;
+    padding: clamp(10px, 2vw, 20px) clamp(5%, 8vw, 10%);
+}
+
+.hpdisplayContainer {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+    gap: clamp(20px, 5vw, 60px) clamp(20px, 4vw, 50px); 
+}
+
+.hpShowButton {
+    margin-top: clamp(10px, 5vw, 40px);
+}
+

@@ -1,0 +1,131 @@
+.checkout {
+    width: 100%;
+    display: flex;
+    gap: clamp(10px, 3vw, 20px);
+    padding: clamp(2em, 4vw, 4em) clamp(3em, 5vw, 7em);
+    align-items: start;
+    justify-content: space-between;
+  
+}
+
+.checkout-left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 3vw, 30px);
+}
+
+.checkout-field {
+    width: 100%;
+    display: flex;
+    gap: clamp(20px, 4vw, 40px);
+}
+
+.checkout-name-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.checkout-name-field label {
+    font-weight: 600;
+}
+
+.checkout-name-field input {
+    padding: clamp(0.8em, 1.5vw, 1em);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: clamp(14px, 1.5vw, 16px);
+    font-weight: 400;
+    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.5), inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.checkout-name-field input::placeholder {
+    font-weight: 500;
+}
+
+.checkout-right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 3vw, 30px);
+}
+
+.checkout-product-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(15px, 3vw, 20px);
+}
+
+.checkout-product-details-header,
+.checkout-product-details-total {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkout-product-details-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(5px, 2vw, 10px);
+}
+
+.checkout-product-details-total p {
+    font-weight: 600;
+}
+
+.checkout-product-details-total h2 {
+    color: gold;
+}
+
+.checkout-place-order {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeorder {
+    cursor: pointer;
+    padding: clamp(8px, 1.5vw, 10px) clamp(20px, 4vw, 25px);
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid grey;
+}
+ 
+@media (max-width: 950px) {
+    .checkout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .checkout-left,
+    .checkout-right {
+        width: 100%;
+    }
+
+    .checkout-field {
+        width: 50%;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width: 600px) {
+     
+
+    .checkout-field {
+        min-width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

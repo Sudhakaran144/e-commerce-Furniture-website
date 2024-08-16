@@ -1,0 +1,61 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(10px, 3vw, 20px) clamp(20px, 5vw, 100px);
+  background-color: #f5efe7;  
+  margin-bottom: 2em;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);  
+}
+
+.toolbar-left,
+.toolbar-center,
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  font-size: clamp(0.8rem, 1.5vw, 1rem); 
+  cursor: pointer;
+  gap: 10px;
+}
+
+.grid-view {
+  position: relative;
+  top: 2px;
+}
+
+.toolbar-center {
+  flex-grow: 1;
+  justify-content: center;
+  font-size: clamp(0.7rem, 1.2vw, 0.9rem); 
+}
+
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 2vw, 20px); 
+}
+
+.show-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.show-wrapper select {
+  padding: 5px;
+  font-size: clamp(0.7rem, 1.2vw, 0.8rem); 
+  border: none;
+}
+
+.show-wrapper option {
+  border: none;
+}

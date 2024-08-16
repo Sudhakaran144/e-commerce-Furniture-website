@@ -1,0 +1,80 @@
+.sliderProduct {
+    width: 100%;
+    height: auto;
+    background: #fcf8f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(20px, 5vw, 40px) clamp(5%, 10%, 15%);
+    margin-bottom: 4em;
+}
+
+.spleft {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 3vw, 20px);
+}
+
+.spleft h1 {
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+}
+
+.spleft p { 
+    font-size: clamp(0.875rem, 1vw, 1rem);
+}
+
+.spbtn {
+    width: 35%;
+    padding: clamp(10px, 2vw, 13px) clamp(10px, 2vw, 15px);
+    background: #b88e2f;
+    border: none;
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    
+}
+
+.spright {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+
+.imgContainer {
+    width: 50%;
+    background: none;
+}
+
+.spright img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+    background: none;
+    border-radius: 20px;
+}
+  
+@media (max-width: 950px) {
+    .sliderProduct {
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+    }
+
+    .spleft, .spright {
+        width: 100%;
+        text-align: center;
+    }
+    .spbtn{
+        margin: auto;
+    }
+
+    .spright {
+        margin-top: clamp(20px, 5vw, 40px);
+    }
+}

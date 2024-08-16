@@ -1,0 +1,12 @@
+.admin-app{
+    width: 100%;
+}
+.app-content{
+    display: flex;
+}
+.admin-left{
+    width: 20%;
+}
+.admin-right{
+    width: 80%;
+}

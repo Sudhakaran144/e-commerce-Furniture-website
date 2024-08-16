@@ -1,0 +1,114 @@
+.product {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    overflow: hidden;  
+    border-radius: 5px;
+    margin: 0 auto;  
+}
+
+.p-container {
+    width: 100%;
+    cursor: pointer;
+}
+
+.p-container img {
+    width: 100%;  
+    aspect-ratio: 4 / 3;
+    object-fit: cover;  
+    display: block; 
+}
+
+.p-details {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #f4f5f7;
+}
+
+.p-details h4 {
+    font-size: 0.8em;
+}
+
+.p-price {
+    display: flex;
+    gap: 20px;
+}
+
+.d-p {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.p-d-c {
+    color: grey;
+}
+
+.discountPer {
+    position: absolute;
+    color: #fff;
+    background: rgb(255, 0, 0);
+    z-index: 10;
+    right: 20px;
+    top: 20px;
+    font-size: 0.7em;
+    padding: 12px 10px;
+    border-radius: 50%;
+}
+
+.hpShowButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.hpShowButton .hpbtn { 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: gold;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.addtocart {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);  
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    z-index: 10;
+}
+
+.AtC{  
+    background: #000;
+    border: none;
+    width: 80%;
+    height: 5vh;
+    font-size: 0.8rem;
+    color: goldenrod;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.p-details:hover .addtocart {
+    opacity: 1;  
+}
+
+.product:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}

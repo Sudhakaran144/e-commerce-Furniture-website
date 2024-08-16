@@ -1,0 +1,162 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    padding: 10px 5%;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+    position: fixed;
+    z-index: 150;
+    background: #fff;
+}
+.n-logo,.nav-items ul,.nav-fun{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.n-logo .n-icon {
+    color: gold;
+    font-size: 30px;
+}
+.nav-items ul li{
+    list-style: none;
+    font-size: 15px;
+    
+}
+.nav-items ul {
+    gap: 50px;
+}
+.n-link{
+    color: #000;
+    text-decoration: none;
+}
+.active{
+    border-bottom: 2px solid gold;
+}
+.nav-fun img{
+    width: 25%;
+    cursor: pointer;
+}
+.nav-fun{
+    position: relative;
+    gap: 30px;
+}
+.nav-icons{
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+}
+.logout{
+    position: absolute;  
+    right: 0px;
+    top: 52px;
+    background: #fff;
+    padding: 10px 40px; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+}
+.login-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.nav-fun .login{
+    display: none;
+}
+.logout svg{
+    cursor: pointer;
+    color: gold;
+    font-size: 18px;
+}
+.menu-option{
+    display: none;
+    cursor: pointer;
+}
+.menu-option-item{
+    display: none;
+    position: fixed; 
+}
+
+@media (max-width:1050px){  
+    .nav-items ul{
+        gap: 20px;
+        left: 15px;
+    }
+    .nav-items ul li{  
+        font-size: 16px;
+    }    
+}
+
+@media (max-width:900px){
+     
+    .nav-items ul{
+        gap: 15px;
+    }
+    .nav-items ul li{
+        font-size: 15px;
+    }
+     
+}
+
+@media (max-width:750px){
+    .nav-items{
+        display: none;
+    }
+    .nav-fun{
+        display: none;
+    }
+    .menu-option{
+        display: block;
+        cursor: pointer;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .menu-option-item {
+        padding-top: 80px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8);  
+        backdrop-filter: blur(5px);  
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all 0.5s ease;   
+        overflow: hidden;
+        z-index: 100;
+    }
+    
+    .menu-option-item ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-option-item ul li{
+        list-style: none;
+    }
+    .menu-nav-fun{
+        display: flex;
+        align-items: center; 
+        gap: 20px;
+    }
+    .menu-nav-fun img{
+        width: 20%;
+        cursor: pointer;
+    }
+    .menu-logout{
+        font-size: 3rem;
+    }
+
+  
+    .menu-option-item.open {
+        opacity: 1;
+        height: auto;
+    }
+}

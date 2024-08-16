@@ -1,0 +1,66 @@
+.SignUp{
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+    height: 100%;
+    background: #00000090;
+    display: grid;
+    
+}
+.SignUp form{
+    place-self: center;
+    width: max(23vw,330px);
+    color: #808080;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    animation: fadeIn .5s;
+}
+.signup-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+}
+.signup-header svg{
+    width: 16px;
+    cursor: pointer;
+}
+.signup-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.signup-inputs input{
+    outline: none;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    padding: 10px;
+}
+.SignUp form button{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    background: tomato;
+    font-size: 15px;
+    cursor: pointer;
+}
+.terms{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.terms p{
+    font-size: 14px;
+}
+.signup-account{
+    font-size: 14px;
+}
+.signup-account span{
+    color: tomato;
+    cursor: pointer;
+}
