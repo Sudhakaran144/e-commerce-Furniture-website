@@ -1,6 +1,6 @@
 const express = require('express')
 const AdminUserModel = require('../models/AdminUserModel')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const validator = require('validator')
 const jwt = require('jsonwebtoken')
 
