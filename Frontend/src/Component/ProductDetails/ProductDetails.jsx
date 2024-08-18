@@ -4,7 +4,7 @@ import { FaFacebook, FaLinkedin, FaMinus, FaPlus, FaTwitter } from 'react-icons/
 import { FurnitureContext } from '../../Context/FurnitureContext';
 
 const ProductDetails = ({ productDetails }) => {  
-  const {handleAddToCart,token} = useContext(FurnitureContext)
+  const {handleAddToCart,token,url} = useContext(FurnitureContext)
   const [mainImage, setMainImage] = useState(productDetails?.image || "");
   const [count,setCount] = useState(1)
 
@@ -24,14 +24,14 @@ const ProductDetails = ({ productDetails }) => {
               {productDetails.additionalImages.map((img, index) => (
                 <img 
                   key={index} 
-                  src={`http://localhost:4000/images/${img}`} 
+                  src={`${url}images/${img}`} 
                   onClick={() => setMainImage(img)} 
                   alt={`Thumbnail ${index + 1}`} 
                 />
               ))}
             </div>
             <div className="product-page-product-details-main-image">
-              <img src={`http://localhost:4000/images/${mainImage}`} alt="Main Product" />
+              <img src={`${url}images/${mainImage}`} alt="Main Product" />
             </div>
           </div>
           <div className="product-page-product-details-right"> 

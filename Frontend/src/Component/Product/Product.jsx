@@ -4,12 +4,12 @@ import { FurnitureContext } from '../../Context/FurnitureContext'
 import { Link } from 'react-router-dom'
 
 const Product = ({ id,name,category,actualPrice,discountprice,discountPercentage,image}) => {
-    const {handleAddToCart, handleViewProduct,token} = useContext(FurnitureContext)
+    const {handleAddToCart, handleViewProduct,token,url} = useContext(FurnitureContext)
   return (
     <div className='product' key={id} >    
         <div className="p-container"  >
             <Link to={`/product/${id}`}>
-                <img src={`http://localhost:4000/images/${image}`} onClick={() => handleViewProduct(id)} alt="" />
+                <img src={`${url}images/${image}`} onClick={() => handleViewProduct(id)} alt="" />
             </Link>
              <div className="p-details">
                 <h4>{name}</h4>

@@ -12,7 +12,7 @@ const CartProductDisplay = ({id, quantity }) => {
     const fetchCartItemDetails = async (itemId) => { 
         
         try {
-            const response = await axios.get(`http://localhost:4000/cart/item/list`, {
+            const response = await axios.get(`${url}cart/item/list`, {
                 params: { itemId }
             }); 
             if (response.data.Success) {
@@ -67,7 +67,7 @@ const CartProductDisplay = ({id, quantity }) => {
   return (
     <div className='cart-product-display'>
         <div className="cartproduct-display-img"> 
-            <img src={`http://localhost:4000/images/${item ? item.image : "Loading"}`} alt="" />
+            <img src={`${url}images/${item ? item.image : "Loading"}`} alt="" />
             <p className='cart_p_name'>{item ? item.name : "Loading..."}</p>
         </div>
         <div className="cart_product_display_details">

@@ -12,7 +12,7 @@ const SidebarCartItem = ({ id, quantity ,handlefunction}) => {
 
     const fetchCartItemDetails = async (itemId) => { 
         try {
-            const response = await axios.get(`http://localhost:4000/cart/item/list`, {
+            const response = await axios.get(`${url}cart/item/list`, {
                 params: { itemId }
             });
            
@@ -49,7 +49,7 @@ const SidebarCartItem = ({ id, quantity ,handlefunction}) => {
                 page === "cart" ? (
                     <div className="cart_product_content" key={id}>
                     <div className="cart_product_img"> 
-                        <img src={`http://localhost:4000/images/${item ? item.image : "Loading"}`} alt="" />
+                        <img src={`${url}images/${item ? item.image : "Loading"}`} alt="" />
                     </div>
                     <div className="cart_product_details">
                         <p className='p_name'>{item ? item.name : "Loading..."}</p>

@@ -6,7 +6,7 @@ import { FurnitureContext } from '../../Context/FurnitureContext';
 
 
 const SignUp = ({setSignUp}) => {
-    const {setToken,setUser,setUserData} = useContext(FurnitureContext)
+    const {setToken,setUser,setUserData,url} = useContext(FurnitureContext)
     const [currShow,setCurrShow] = useState("Sign Up")
     const [logout,setLogout] = useState(false)
     const[data,setData] = useState({
@@ -25,18 +25,18 @@ const SignUp = ({setSignUp}) => {
      
     const islogin = async (e) => {
         e.preventDefault();
-        let url = "http://localhost:4000/user/";
+        let URL = `${url}user/`;
         if (currShow === "Login") {
-            url = url + 'login';
+            URL = URL + 'login';
         } else {
-            url = url + 'register';
+            URL = URL + 'register';
         }
     
-        console.log('Sending request to:', url);
+        console.log('Sending request to:', URL);
         console.log('Request data:', data);
      
         try { 
-            const response = await axios.post(url, data);
+            const response = await axios.post(URL, data);
             console.log(response);
             if (response.data.Success) {
                 setToken(response.data.token);
