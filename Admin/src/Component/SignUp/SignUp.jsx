@@ -15,7 +15,7 @@ const SignUp = ({setSignUp}) => {
         password:""
     })
 
-    const Url = "http://localhost:4000/"
+    const Url = "https://furniture-website-backend.onrender.com"
 
     const navigate = useNavigate()
 
