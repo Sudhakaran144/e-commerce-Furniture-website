@@ -9,7 +9,7 @@ import { toast } from 'react-toastify';
 const List = () => {
   const [product,setProduct] = useState([]);
 
-  const url = "http://localhost:4000/"
+  const url = "https://furniture-website-backend.onrender.com"
 
   const fetchList = async () => {
     const response = await axios.get(`${url}api/furniture/list`)
