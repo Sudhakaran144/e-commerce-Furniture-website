@@ -12,7 +12,13 @@ const { cartRouter } = require('./routes/cartRouter');
 
 
 const app = express()
-app.use(cors())
+app.use(cors(
+    {
+        origin: ["https://deploy-mern-1whq.vercel.app"],
+        method: ["POST","GET"],
+        credentials:true
+    }
+))
 app.use(express.json())
 const port = process.env.PORT || 4000;
 
