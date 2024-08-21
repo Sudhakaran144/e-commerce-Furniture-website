@@ -20,7 +20,7 @@ const Add = () => {
         star: ""
     });
 
-     const url = "http://localhost:4000/"
+     const url = "https://furniture-website-backend.onrender.com"
 
     const addImages = (e, index) => {
         const file = e.target.files[0];
