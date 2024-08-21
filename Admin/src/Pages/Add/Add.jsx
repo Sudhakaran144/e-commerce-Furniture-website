@@ -20,6 +20,8 @@ const Add = () => {
         star: ""
     });
 
+     const url = "http://localhost:4000/"
+
     const addImages = (e, index) => {
         const file = e.target.files[0];
         setAddiImages((prevAddiImages) => {
@@ -69,7 +71,7 @@ const Add = () => {
         });
 
         try{
-            const response = await axios.post("http://localhost:4000/api/furniture/add",formData);
+            const response = await axios.post( `${url}api/furniture/add`,formData);
 
             console.log(response)
 

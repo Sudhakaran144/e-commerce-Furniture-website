@@ -9,8 +9,10 @@ import { toast } from 'react-toastify';
 const List = () => {
   const [product,setProduct] = useState([]);
 
+  const url = "http://localhost:4000/"
+
   const fetchList = async () => {
-    const response = await axios.get("http://localhost:4000/api/furniture/list")
+    const response = await axios.get(`${url}api/furniture/list`)
     console.log(response)
     if(response.data.success){
       setProduct(response.data.data) 
@@ -23,7 +25,7 @@ const List = () => {
 
   const handleDelete = async (id) => {
     try{
-      const response = await axios.post("http://localhost:4000/api/furniture/remove",{id:id})
+      const response = await axios.post(`${url}api/furniture/remove`,{id:id})
       
       if(response.data.success){ 
         fetchList(); 
@@ -70,7 +72,7 @@ const List = () => {
                 <div className="product-list " key={i}>
                   
                   <div className="pro_image">
-                    <img src={'http://localhost:4000/images/'+item.image} alt="" />
+                    <img src={`${url}images/`+item.image} alt="" />
                   </div>
                   <div className="pro_name">
                     <p>{item.name}</p>

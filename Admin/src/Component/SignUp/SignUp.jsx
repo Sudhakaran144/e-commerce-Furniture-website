@@ -15,6 +15,8 @@ const SignUp = ({setSignUp}) => {
         password:""
     })
 
+    const Url = "http://localhost:4000/"
+
     const navigate = useNavigate()
 
     const OnChangeHandler = (e) => {
@@ -25,7 +27,7 @@ const SignUp = ({setSignUp}) => {
     const Submit = async (e) => {
         e.preventDefault();
          
-        let url = "http://localhost:4000/userAdmin/user/";
+        let url = `${Url}userAdmin/user/`;
         if(currShow == "Login"){
             url = url + 'login'
         }
