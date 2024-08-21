@@ -17,7 +17,7 @@ const FurnitureContextProvider = ({ children }) => {
     const [cartTotalAmount,setCartTotalAmount] = useState(0);
     const [productDetails,setProductDetails] = useState()
 
-    const url = "https://furniture-website-backend.onrender.com"
+    const url = "https://e-commerce-furniture-website-backend.onrender.com/"
 
     const fetchData = async (e) => {
         try{
